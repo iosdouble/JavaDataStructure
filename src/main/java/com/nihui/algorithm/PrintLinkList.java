@@ -21,10 +21,12 @@ public class PrintLinkList {
         listNode.add(3);
         listNode.add(4);
 
+
+
 //        ArrayList<Integer> integers = printListFromTailToHead(listNode);
         ArrayList<Integer> integers = printListReverse2(listNode);
         for (Integer item: integers) {
-            System.out.println(item);
+            System.out.print(item);
         }
     }
 
