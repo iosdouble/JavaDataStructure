@@ -54,6 +54,8 @@ public class Demo02 {
                 p2 = p2.next;
             }
         }
+
+        //15546631181
         if (p2==null){
             while (p1 != null){
                 temp = new LNode();
@@ -73,5 +75,44 @@ public class Demo02 {
             p.next = temp;
         }
         return resultHead;
+    }
+
+    public static void main(String[] args) {
+        int i = 1;
+        LNode head1 = new LNode();
+        head1.next = null;
+        LNode head2 = new LNode();
+        head2.next = null;
+        LNode temp = null;
+        LNode cur = head1;
+        LNode addResult = null;
+        for (;i<7;i++){
+            temp = new LNode();
+            temp.data = i+2;
+            temp.next = null;
+            cur.next = temp;
+            cur = temp;
+        }
+        cur = head2;
+        for (i=9;i>4;i--){
+            temp = new LNode();
+            temp.data = i;
+            temp.next = null;
+            cur.next = temp;
+            cur = temp;
+        }
+        System.out.print("Head: ");
+        for (cur=head1.next;cur!=null;cur = cur.next){
+            System.out.print(cur.data+" ");
+        }
+        System.out.print("\nHead2: ");
+        for (cur=head2.next;cur!=null;cur = cur.next){
+            System.out.print(cur.data+" ");
+        }
+        addResult =add(head1,head2);
+        System.out.print("\n相加后的和 ");
+        for (cur=addResult.next;cur!=null;cur = cur.next){
+            System.out.print(cur.data+" ");
+        }
     }
 }
