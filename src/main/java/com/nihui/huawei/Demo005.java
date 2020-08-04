@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * @Classname Demo005
- * @Description TODO
+ * @Description TODO 字符分隔
  * @Date 2020/7/23 10:18 AM
  * @Created by nihui
  */
